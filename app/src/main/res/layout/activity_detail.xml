@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F6F8F7" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="280dp">
+            <ImageView android:id="@+id/detailImage" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:scaleType="centerCrop"
+                android:contentDescription="Destination photograph"/>
+            <TextView android:id="@+id/backButton" android:layout_width="42dp"
+                android:layout_height="42dp" android:layout_margin="18dp"
+                android:gravity="center" android:text="‹" android:textSize="30sp"
+                android:textColor="#172522" android:background="#F2FFFFFF"/>
+            <TextView android:id="@+id/detailFavorite" android:layout_width="42dp"
+                android:layout_height="42dp" android:layout_margin="18dp"
+                android:layout_gravity="end" android:gravity="center" android:text="♡"
+                android:textSize="24sp" android:textColor="#176B5B" android:background="#F2FFFFFF"/>
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="22dp">
+            <TextView android:id="@+id/detailCategory" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textColor="#176B5B"
+                android:textStyle="bold" android:textSize="12sp"/>
+            <TextView android:id="@+id/detailName" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="7dp"
+                android:textColor="#172522" android:textSize="28sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/detailCountry" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="4dp"
+                android:textColor="#71817C" android:textSize="14sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:text="About this place"
+                android:textColor="#172522" android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/detailDescription" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="9dp"
+                android:textColor="#465650" android:textSize="15sp" android:lineSpacingExtra="5dp"/>
+            <ProgressBar android:id="@+id/detailProgress" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginTop="18dp" android:visibility="gone"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:text="Travel tip"
+                android:textColor="#172522" android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/travelTip" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:textColor="#465650" android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

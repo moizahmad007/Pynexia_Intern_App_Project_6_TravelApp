@@ -1,0 +1,36 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp" app:cardCornerRadius="20dp"
+    app:cardElevation="2dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="#FFFFFF">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="175dp">
+            <ImageView android:id="@+id/destinationImage" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:scaleType="centerCrop"
+                android:contentDescription="Destination photograph"/>
+            <TextView android:id="@+id/categoryBadge" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="top|start"
+                android:layout_margin="12dp" android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp" android:textColor="#176B5B"
+                android:textSize="11sp" android:textStyle="bold" android:background="#F2FFFFFF"/>
+            <TextView android:id="@+id/favoriteButton" android:layout_width="36dp"
+                android:layout_height="36dp" android:layout_gravity="top|end"
+                android:layout_margin="10dp" android:gravity="center" android:text="♡"
+                android:textSize="22sp" android:textColor="#176B5B" android:background="#F2FFFFFF"/>
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="14dp">
+            <TextView android:id="@+id/destinationName" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textColor="#172522"
+                android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/destinationCountry" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                android:textColor="#71817C" android:textSize="13sp"/>
+            <TextView android:id="@+id/destinationDescription" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:maxLines="2" android:ellipsize="end" android:textColor="#465650"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
